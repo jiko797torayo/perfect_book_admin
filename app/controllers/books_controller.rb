@@ -10,10 +10,8 @@ class BooksController < ApplicationController
 
   def show
     respond_to do |format|
-      format.html do |html|
-        html.mobile { redirect_to profile_path }
-      end
-      format.json { render json: @book }
+      format.html
+      format.json
     end
   end
 
